@@ -3,7 +3,7 @@ Node.JS Chat
 
 This project is an Article Skimmer and Summarizer, specifically trained on PUBMED's dataset of 20,000 RCT (Randomized Controlled Trial) articles. It has been developed using a `1D Convolutional Neural Network (CNN)`. In the future, we plan to incorporate additional advanced neural networks to enhance its functionality and performance.
 
-![picture1](http://i.imgur.com/lgRe8z4.png)
+![picture1](https://github.com/Matin-Rasoulzad/Article-Summarization-Using-NLP/blob/main/Documents/Artboard.png)
 
 ---
 ## Buy me a coffee
