@@ -1,4 +1,4 @@
-Node.JS Chat
+Article Summarization Using 1D-Convolutional neural networks
 ============
 
 This project is an Article Skimmer and Summarizer, specifically trained on 20,000 RCT (Randomized Controlled Trial) articles on PUBMED(https://pubmed.ncbi.nlm.nih.gov). It has been developed using a `1D Convolutional Neural Network (CNN)`. In the future, we plan to incorporate additional advanced neural networks to enhance its functionality and performance.
