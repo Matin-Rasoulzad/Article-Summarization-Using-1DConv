@@ -84,7 +84,8 @@ You can access the notebook via `Notebook.ipynb` in my github (https://github.co
 
 ## Input and Output
 
-![example](Docs/params_model_1.png)
+![example](Docs/example.png)
+
 For example input is:
 
 ![shot1](Docs/input1.png)
