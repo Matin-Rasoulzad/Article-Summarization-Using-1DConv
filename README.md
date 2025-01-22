@@ -5,14 +5,6 @@ This project is an Article Skimmer and Summarizer, specifically trained on 20,00
 
 ![picture1](Docs/Artboard.png)
 
-
-## Table of Contents
-
-- [Architecture](#Architecture)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
-- [Usage](#usage)
-
 ## Architecture
 
 Many-to-one sequence problems involve processing a sequential dataset to generate a single output. This is widely used in tasks such as sentiment analysis, text classification, and summarization. Below is a detailed professional description of the architecture tailored to handle such problems effectively.
@@ -75,6 +67,14 @@ This streamlined architecture is ideal for tasks like summarization, classificat
 
 ![RNN3](Docs/params_model_1.png)
 
+## Dataset
+
+We are using a commonly used dataset by **Franck Dernoncourt, Ji Young Lee**.<br>
+<a href="https://arxiv.org/abs/1710.06071">PubMed 200k RCT: a Dataset for Sequential Sentence Classification in Medical Abstracts</a><br>
+The dataset consists of approximately 200,000 abstracts of randomized controlled trials, totaling 2.3 million sentences. Each sentence of each abstract is labeled with their role in the abstract using one of the following classes: background, objective, method, result, or conclusion. 
+
+
+![dataset](Docs/dataset1.png)
 ## Code
 
 The code is written in **python** language in **Jupiter notebook** & **Google Colab**.
@@ -82,11 +82,15 @@ I used numpy and matplotlib to visualize and preprocess data, On the top of that
 
 You can access the notebook via `Notebook.ipynb` in my github (https://github.com/Matin-Rasoulzad/Article-Summarization-Using-NLP/blob/main/Notebook.ipynb)
 
-![example2](docs/notebook.png)
+## Input and Output
 
-## Screenshots
+![example](Docs/params_model_1.png)
+For example input is:
 
-Here are some screenshots of the project:
+![shot1](Docs/input1.png)
+
+And output for that:
+![shot2](Docs/output1.png)
 
 ### Model accuracy
 
