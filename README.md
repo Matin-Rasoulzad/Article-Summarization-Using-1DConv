@@ -3,6 +3,7 @@ Article Summarization Using 1D-Convolutional neural networks
 
 This project is an Article Skimmer and Summarizer, specifically trained on 20,000 RCT (Randomized Controlled Trial) articles on PUBMED(https://pubmed.ncbi.nlm.nih.gov). It has been developed using a `1D Convolutional Neural Network (CNN)`. In the future, we plan to incorporate additional advanced neural networks to enhance its functionality and performance.
 
+این پروژه یک ابزار برای خلاصه‌سازی مقالات است که با استفاده از شبکه‌های عصبی کانولوشن یک‌بعدی (1D-CNN) طراحی شده است. مدل با بهره‌گیری از داده‌های توالی‌محور، جملات هر مقاله را در کلاس‌های مختلف دسته‌بندی می‌کند (پیشینه، هدف، روش، نتایج و نتیجه‌گیری).
 ![picture1](Docs/Artboard.png)
 
 ## Architecture
