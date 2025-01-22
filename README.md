@@ -5,63 +5,120 @@ This project is an Article Skimmer and Summarizer, specifically trained on 20,00
 
 ![picture1](Docs/Artboard.png)
 
----
-## Buy me a coffee
 
-Whether you use this project, have learned something from it, or just like it, please consider supporting it by buying me a coffee, so I can dedicate more time on open-source projects like this :)
+## Table of Contents
 
-<a href="https://www.buymeacoffee.com/igorantun" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+- [Architecture](#Architecture)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
 
----
+## Architecture
 
-## Features
-- Material Design
-- Emoji support
-- User @mentioning
-- Private messaging
-- Message deleting (for admins)
-- Ability to kick/ban users (for admins)
-- See other user's IPs (for admins)
-- Other awesome features yet to be implemented
+Many-to-one sequence problems involve processing a sequential dataset to generate a single output. This is widely used in tasks such as sentiment analysis, text classification, and summarization. Below is a detailed professional description of the architecture tailored to handle such problems effectively.
 
-![User Features](http://i.imgur.com/WbF1fi2.png)
+### Architecture for Many-to-One Sequence Problems
+![RNN](Docs/rnn-seq.png)
 
-![Admin Features](http://i.imgur.com/xQFaadt.png)
-
-
-#### There are 3 admin levels:
-- **Helper:** Can delete chat messages
-- **Moderator:** The above plus the ability to kick and ban users
-- **Administrator:** All the above plus send global alerts and promote/demote users
+#### 1. Input Layer
+Processes sequential data (e.g., words or timestamps) into feature embeddings:
+- **Embeddings**: Word2Vec, GloVe, or BERT.
+- **Input Shape**: \( (T, F) \), where \( T \) is sequence length, \( F \) is feature size.
 
 ---
 
-## Setup
-Clone this repo to your desktop and run `npm install` to install all the dependencies.
-
-You might want to look into `config.json` to make change the port you want to use and set up a SSL certificate.
-
----
-
-## Usage
-After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies.
-
-Once the dependencies are installed, you can run  `npm start` to start the application. You will then be able to access it at localhost:3000
-
-To give yourself administrator permissions on the chat, you will have to type `/role [your-name]` in the app console.
+#### 2. Recurrent Neural Network (RNN) Layer
+Captures sequential relationships using:
+- **Options**: Standard RNNs, LSTMs, or GRUs.
+- **Workflow**: Processes data step-by-step, updating hidden states.
 
 ---
 
-## License
->You can check out the full license [here](https://github.com/IgorAntun/node-chat/blob/master/LICENSE)
+#### 3. Contextual Encoding
+Enhances sequence understanding with:
+- **Bidirectional RNNs**: Processes forward and backward.
+- **Attention Mechanisms**: Focuses on relevant sequence parts.
 
-This project is licensed under the terms of the **MIT** license.
+---
 
+#### 4. Aggregation Layer
+Unifies sequence outputs into a single representation:
+- **Global Pooling**: Average or max over time steps.
+- **Hidden State**: Uses the last or combined hidden states.
 
-## License
->You can check out the full license [here](https://github.com/IgorAntun/node-chat/blob/master/LICENSE)
+---
 
-This project is licensed under the terms of the **MIT** license.
+#### 5. Fully Connected Layers
+Transforms aggregated data for prediction:
+- **Activation**: ReLU (intermediate), softmax/sigmoid (output).
+- **Regularization**: Dropout or L2 to prevent overfitting.
+
+---
+
+#### 6. Output Layer
+Generates the final output:
+- **Classification**: Softmax/sigmoid for labels.
+- **Regression**: Linear activation for continuous outputs.
+
+---
+
+#### 7. Loss and Optimization
+- **Loss**: Cross-entropy (classification) or MSE (regression).
+- **Optimizers**: Adam, RMSprop, or SGD.
+- **Batching**: Handles varying sequence lengths via padding.
+
+---
+
+This streamlined architecture is ideal for tasks like summarization, classification, and time-series predictions.
+
+## Code
+
+The code is written in **python** language in **Jupiter notebook** & **Google Colab**.
+I used numpy and matplotlib to visualize and preprocess data, On the top of that tensorflow helped me with building my CNN model.
+
+You can access the notebook via `Notebook.ipynb` in my github **(https://github.com/Matin-Rasoulzad/Food-Image-classification-using-CNN/blob/main/Notebook.ipynb)**
+
+![example2](docs/notebook.png)
+
+## Screenshots
+
+Here are some screenshots of the project:
+
+### Model accuracy
+
+This CNN project has been trained in 3 different `Tiny VGG` models but with different learning rates
+![Screenshot 1](docs/model_1.png)
+![Screenshot 2](docs/model_2.png)
+![Screenshot 3](docs/model_3.png)
+
+### Predictions
+
+The predictions of the `Final Model`.
+
+![Screenshot 4](docs/pizza.jpg)<br>
+
+As you see it can confidentially classify `steak🥩` & `pizza🍕`.
+
+![Screenshot 5](docs/steak.jpg)<br>
+
+In later versions we would try to add new food catagories from `Food 101 dataset`**(https://www.kaggle.com/datasets/dansbecker/food-101)**
+
+## Installation
+
+Instructions on how to install and run the project locally.
+
+```bash
+# Clone the repository
+git clone https://github.com/Matin-Rasoulzad/Food-Image-classification-using-2DConv-TinyVGG.git
+
+# Navigate to the project directory
+cd Food-Image-classification-using-2DConv-TinyVGG
+
+# Install dependencies
+pip install tensorflow numpy matplotlib seaborn pandas
+```
+
+## Contribute
 
 -   **GitHub:** [Matin-Rasoulzad](https://github.com/Matin-Rasoulzad)
 -   **LinkedIn:** [Matin-Rasoulzad](https://www.linkedin.com/in/Matin-Rasoulzad)
