@@ -93,35 +93,16 @@ For example input is:
 And output for that:
 ![shot2](Docs/output1.png)
 
-### Model accuracy
-
-This CNN project has been trained in 3 different `Tiny VGG` models but with different learning rates
-![Screenshot 1](docs/model_1.png)
-![Screenshot 2](docs/model_2.png)
-![Screenshot 3](docs/model_3.png)
-
-### Predictions
-
-The predictions of the `Final Model`.
-
-![Screenshot 4](docs/pizza.jpg)<br>
-
-As you see it can confidentially classify `steak🥩` & `pizza🍕`.
-
-![Screenshot 5](docs/steak.jpg)<br>
-
-In later versions we would try to add new food catagories from `Food 101 dataset`**(https://www.kaggle.com/datasets/dansbecker/food-101)**
-
 ## Installation
 
 Instructions on how to install and run the project locally.
 
 ```bash
 # Clone the repository
-git clone https://github.com/Matin-Rasoulzad/Food-Image-classification-using-2DConv-TinyVGG.git
+git clone https://github.com/Matin-Rasoulzad/Article-Summarization-Using-1DConv.git
 
 # Navigate to the project directory
-cd Food-Image-classification-using-2DConv-TinyVGG
+cd Article-Summarization-Using-1DConv
 
 # Install dependencies
 pip install tensorflow numpy matplotlib seaborn pandas
