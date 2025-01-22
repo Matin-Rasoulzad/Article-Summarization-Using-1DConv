@@ -32,6 +32,8 @@ Captures sequential relationships using:
 - **Options**: Standard RNNs, LSTMs, or GRUs.
 - **Workflow**: Processes data step-by-step, updating hidden states.
 
+![RNN2](Docs/The-standard-RNN.png)
+
 ---
 
 #### 3. Contextual Encoding
@@ -76,7 +78,7 @@ This streamlined architecture is ideal for tasks like summarization, classificat
 The code is written in **python** language in **Jupiter notebook** & **Google Colab**.
 I used numpy and matplotlib to visualize and preprocess data, On the top of that tensorflow helped me with building my CNN model.
 
-You can access the notebook via `Notebook.ipynb` in my github **(https://github.com/Matin-Rasoulzad/Food-Image-classification-using-CNN/blob/main/Notebook.ipynb)**
+You can access the notebook via `Notebook.ipynb` in my github (https://github.com/Matin-Rasoulzad/Article-Summarization-Using-NLP/blob/main/Notebook.ipynb)
 
 ![example2](docs/notebook.png)
 
