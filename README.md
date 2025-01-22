@@ -73,7 +73,7 @@ Generates the final output:
 
 This streamlined architecture is ideal for tasks like summarization, classification, and time-series predictions. The image below represents the final arch of the ANN:
 
-![RNN3](Docs/params_model_1)
+![RNN3](Docs/params_model_1.png)
 
 ## Code
 
