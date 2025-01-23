@@ -1,9 +1,9 @@
 Article Summarization Using Recurrent Neural Network
 ============
 
-This project is an Article Skimmer and Summarizer, specifically trained on 20,000 RCT (Randomized Controlled Trial) articles on PUBMED(https://pubmed.ncbi.nlm.nih.gov). It has been developed using a `1D Convolutional Neural Network (CNN)`. In the future, we plan to incorporate additional advanced neural networks to enhance its functionality and performance.
+This project is an Article Skimmer and Summarizer, specifically trained on 20,000 RCT (Randomized Controlled Trial) articles on PUBMED(https://pubmed.ncbi.nlm.nih.gov). It has been developed using a `recurrent neural network `. In the future, we plan to incorporate additional advanced neural networks to enhance its functionality and performance.
 
-این پروژه یک ابزار برای خلاصه‌سازی مقالات است که با استفاده از شبکه‌های عصبی کانولوشن یک‌بعدی (1D-CNN) طراحی شده است. مدل با بهره‌گیری از داده‌های توالی‌محور، جملات هر مقاله را در کلاس‌های مختلف دسته‌بندی می‌کند (پیشینه، هدف، روش، نتایج و نتیجه‌گیری).
+این پروژه یک ابزار برای خلاصه‌سازی مقالات است که با استفاده از شبکه‌های عصبی مکرر(تکرارشونده) طراحی شده است. مدل با بهره‌گیری از داده‌های توالی‌محور، جملات هر مقاله را در کلاس‌های مختلف دسته‌بندی می‌کند (پیشینه، هدف، روش، نتایج و نتیجه‌گیری).
 ![picture1](Docs/Artboard.png)
 
 ## Architecture
@@ -100,10 +100,10 @@ Instructions on how to install and run the project locally.
 
 ```bash
 # Clone the repository
-git clone https://github.com/Matin-Rasoulzad/Article-Summarization-Using-1DConv.git
+git clone https://github.com/Matin-Rasoulzad/Article-Summarization-Using-RNN.git
 
 # Navigate to the project directory
-cd Article-Summarization-Using-1DConv
+cd Article-Summarization-Using-RNN
 
 # Install dependencies
 pip install tensorflow numpy matplotlib seaborn pandas
